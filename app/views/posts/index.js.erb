@@ -1,0 +1,4 @@
+document.getElementById('tbody').innerHTML = ''
+<% @posts.each do |post| %>
+    document.getElementById('tbody').innerHTML += '<%= j render post %>'
+<% end %>
